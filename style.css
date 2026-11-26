@@ -1,0 +1,55 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #0B0F19;
+  color: #E2E8F0;
+  padding: 24px 16px 40px;
+}
+.wc-wrap { max-width: 640px; margin: 0 auto; }
+.wc-head h1 { font-size: 1.7rem; font-weight: 800; color: #F8FAFC; margin-bottom: 8px; }
+.wc-head p { color: #94A3B8; line-height: 1.55; margin-bottom: 20px; }
+.wc-head a, .wc-foot a { color: #38BDF8; text-decoration: none; font-weight: 600; }
+.wc-head a:hover, .wc-foot a:hover { text-decoration: underline; }
+.wc-card {
+  background: #111827;
+  border: 1px solid #1F2937;
+  border-radius: 14px;
+  padding: 20px;
+}
+.wc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.wc-field { display: flex; flex-direction: column; gap: 6px; }
+.wc-field.wc-wide { grid-column: 1 / -1; }
+.wc-field span { font-size: 0.82rem; font-weight: 600; color: #CBD5E1; }
+.wc-field input[type="number"], .wc-field select {
+  background: #0B0F19;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #F1F5F9;
+  padding: 10px 12px;
+  font-size: 1rem;
+  width: 100%;
+}
+.wc-field input[type="range"] { width: 100%; accent-color: #F97316; }
+.wc-results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+.wc-result {
+  background: #0B0F19;
+  border: 1px solid #1F2937;
+  border-top: 3px solid #F97316;
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+}
+.wc-num { display: block; font-size: 1.5rem; font-weight: 800; color: #F8FAFC; }
+.wc-label { display: block; font-size: 0.72rem; color: #94A3B8; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+.wc-note { margin-top: 14px; font-size: 0.85rem; color: #94A3B8; line-height: 1.5; }
+.wc-foot { margin-top: 20px; text-align: center; color: #94A3B8; line-height: 1.6; }
+.wc-brand { font-size: 0.8rem; color: #64748B; margin-top: 6px; }
+@media (max-width: 480px) {
+  .wc-results { grid-template-columns: 1fr; }
+  .wc-num { font-size: 1.3rem; }
+}

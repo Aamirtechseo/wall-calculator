@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wall Stud Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wc-wrap">
+  <header class="wc-head">
+    <h1>Wall Stud Calculator</h1>
+    <p>Count framing studs for a wall in seconds. Full version with drywall, screws, mud and a printable takeoff: <a href="https://wallcalculator.app/" target="_blank">wallcalculator.app</a></p>
+  </header>
+
+  <div class="wc-card">
+    <div class="wc-grid">
+      <label class="wc-field">
+        <span>Wall length (ft)</span>
+        <input type="number" id="wc-length" value="16" min="1" max="200">
+      </label>
+      <label class="wc-field">
+        <span>Wall height (ft)</span>
+        <input type="number" id="wc-height" value="8" min="4" max="20">
+      </label>
+      <label class="wc-field">
+        <span>Stud spacing</span>
+        <select id="wc-spacing">
+          <option value="16" selected>16 in on-center</option>
+          <option value="24">24 in on-center</option>
+        </select>
+      </label>
+      <label class="wc-field">
+        <span>Lumber size</span>
+        <select id="wc-lumber">
+          <option value="2x4" selected>2 x 4</option>
+          <option value="2x6">2 x 6</option>
+        </select>
+      </label>
+      <label class="wc-field">
+        <span>Doors</span>
+        <input type="number" id="wc-doors" value="1" min="0" max="20">
+      </label>
+      <label class="wc-field">
+        <span>Windows</span>
+        <input type="number" id="wc-windows" value="1" min="0" max="20">
+      </label>
+      <label class="wc-field wc-wide">
+        <span>Waste allowance: <strong id="wc-waste-val">10%</strong></span>
+        <input type="range" id="wc-waste" value="10" min="0" max="25" step="1">
+      </label>
+    </div>
+
+    <div class="wc-results">
+      <div class="wc-result">
+        <span class="wc-num" id="wc-studs">35</span>
+        <span class="wc-label">Studs to buy</span>
+      </div>
+      <div class="wc-result">
+        <span class="wc-num" id="wc-cost">$170</span>
+        <span class="wc-label">Est. lumber cost</span>
+      </div>
+      <div class="wc-result">
+        <span class="wc-num" id="wc-plates">6</span>
+        <span class="wc-label">Plate pieces incl.</span>
+      </div>
+    </div>
+    <p class="wc-note" id="wc-breakdown"></p>
+  </div>
+
+  <footer class="wc-foot">
+    <p>Need drywall sheets, screws and total project cost too? Run the full takeoff at <a href="https://wallcalculator.app/" target="_blank">wallcalculator.app</a></p>
+    <p class="wc-brand">Wall Calculator · Free construction calculators</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
