@@ -2,7 +2,7 @@
 
 A small, dependency-free wall stud calculator that runs in the browser. Enter the wall length, height, stud spacing, lumber size, doors and windows, and it returns the stud count, the plate pieces and an estimated lumber cost, with a full breakdown of where every stud goes.
 
-Built by [Wall Calculator](https://wallcalculator.app/), a free set of construction calculators for framing, drywall, concrete, decks and fences.
+Built by [wallcalculator.app](https://wallcalculator.app/), a free set of construction calculators for framing, drywall, concrete, decks and fences.
 
 ## Run it
 
@@ -36,4 +36,4 @@ A 16 ft long, 8 ft high wall at 16 in on-center, 2x4 lumber, 1 door, 1 window an
 
 ## The full calculators
 
-This demo covers studs only. The full version adds drywall sheets, screws, joint compound, tape and a printable takeoff list, alongside calculators for cinder block, retaining walls, concrete slabs, decks and fences: [Wall Calculator](https://wallcalculator.app/)
+This demo covers studs only. The full version adds drywall sheets, screws, joint compound, tape and a printable takeoff list, alongside calculators for cinder block, retaining walls, concrete slabs, decks and fences: [wallcalculator.app](https://wallcalculator.app/)
