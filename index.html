@@ -6,12 +6,47 @@
 <meta name="description" content="Count framing studs for any wall with this mini wall stud calculator demo, then run the full takeoff with drywall, screws and costs on the main site.">
 <title>Wall Stud Calculator: Count 2x4 and 2x6 Framing Studs</title>
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many studs do I need for a 16 ft wall?",
+      "acceptedAnswer": { "@type": "Answer", "text": "At 16 in on-center spacing with no openings, a 16 ft wall needs 26 studs including plates, corners and 10 percent waste. Add a door and a window and the same wall needs 35 studs, which is the default example in the calculator above." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I frame at 16 in or 24 in on-center?",
+      "acceptedAnswer": { "@type": "Answer", "text": "16 in on-center is the standard for load-bearing and exterior walls because it carries roof and floor loads safely and gives drywall solid backing. 24 in on-center is allowed for some single-story and non-load-bearing walls and uses fewer studs, but always check your local code before choosing it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the count include a double top plate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A double top plate ties intersecting walls together, spreads loads from joists and rafters that land between studs, and gives a continuous nailing surface. The calculator counts three plate pieces per wall run: one bottom plate and two top plates." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much waste should I add to a stud order?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ten percent is a safe default for straight walls. It covers culls, split ends and cutting mistakes. Go up to 15 percent for walls with several openings or if your lumber yard tends to send warped stock." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="wc-wrap">
   <header class="wc-head">
+    <span class="wc-badge">Mini demo</span>
     <h1>Wall Stud Calculator</h1>
     <p>Count framing studs for a wall in seconds. Full version with drywall, screws, mud and a printable takeoff: <a href="https://wallcalculator.app/" target="_blank">wallcalculator.app</a></p>
+    <div class="wc-chips">
+      <span class="wc-chip">16 in and 24 in spacing</span>
+      <span class="wc-chip">2x4 and 2x6 lumber</span>
+      <span class="wc-chip">Doors and windows included</span>
+      <span class="wc-chip">IRC-style takeoff</span>
+    </div>
   </header>
 
   <div class="wc-card">
@@ -68,6 +103,66 @@
     </div>
     <p class="wc-note" id="wc-breakdown"></p>
   </div>
+
+  <section class="wc-section">
+    <h2>How the stud count works</h2>
+    <p class="wc-lead">A wall is more than the studs you see in a row. This calculator follows a standard IRC-style takeoff, so the number you get is the number you actually buy, not just the field studs.</p>
+    <div class="wc-cards">
+      <div class="wc-mini">
+        <h3>Field studs</h3>
+        <p>One stud at the start of the wall, then one at every on-center mark along its length.</p>
+      </div>
+      <div class="wc-mini">
+        <h3>Plates</h3>
+        <p>A single bottom plate plus a double top plate, cut from stock the height of the wall.</p>
+      </div>
+      <div class="wc-mini">
+        <h3>Corner studs</h3>
+        <p>Two extra studs at each corner for strength, drywall backing and a nailing surface.</p>
+      </div>
+      <div class="wc-mini">
+        <h3>Opening studs</h3>
+        <p>Four studs for every door and window: a king and a jack stud on each side of the opening.</p>
+      </div>
+      <div class="wc-mini">
+        <h3>Waste allowance</h3>
+        <p>A percentage on top for culls, split ends and cutting mistakes. Ten percent suits most straight walls.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wc-section">
+    <h2>Studs by wall length</h2>
+    <p class="wc-lead">Quick reference for an 8 ft high wall at 16 in on-center, with no doors or windows and 10 percent waste included:</p>
+    <table class="wc-table">
+      <thead>
+        <tr><th>Wall length</th><th>Field studs</th><th>Studs to buy</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>8 ft</td><td>7</td><td>16</td></tr>
+        <tr><td>10 ft</td><td>9</td><td>19</td></tr>
+        <tr><td>12 ft</td><td>10</td><td>21</td></tr>
+        <tr><td>16 ft</td><td>13</td><td>26</td></tr>
+        <tr><td>20 ft</td><td>16</td><td>31</td></tr>
+        <tr><td>24 ft</td><td>19</td><td>36</td></tr>
+      </tbody>
+    </table>
+    <p class="wc-lead">Spacing matters too: the same 16 ft wall needs 13 field studs at 16 in on-center but only 9 at 24 in on-center. Wider spacing saves lumber, yet 16 in stays the standard for load-bearing and exterior walls because it carries loads safely and backs drywall properly.</p>
+  </section>
+
+  <section class="wc-section">
+    <h2>Common questions</h2>
+    <div class="wc-faq">
+      <h3>How many studs do I need for a 16 ft wall?</h3>
+      <p>At 16 in on-center spacing with no openings, a 16 ft wall needs 26 studs including plates, corners and 10 percent waste. Add a door and a window and the same wall needs 35 studs, which is the default example in the calculator above.</p>
+      <h3>Should I frame at 16 in or 24 in on-center?</h3>
+      <p>16 in on-center is the standard for load-bearing and exterior walls because it carries roof and floor loads safely and gives drywall solid backing. 24 in on-center is allowed for some single-story and non-load-bearing walls and uses fewer studs, but always check your local code before choosing it.</p>
+      <h3>Why does the count include a double top plate?</h3>
+      <p>A double top plate ties intersecting walls together, spreads loads from joists and rafters that land between studs, and gives a continuous nailing surface. The calculator counts three plate pieces per wall run: one bottom plate and two top plates.</p>
+      <h3>How much waste should I add to a stud order?</h3>
+      <p>Ten percent is a safe default for straight walls. It covers culls, split ends and cutting mistakes. Go up to 15 percent for walls with several openings or if your lumber yard tends to send warped stock.</p>
+    </div>
+  </section>
 
   <footer class="wc-foot">
     <p>Need drywall sheets, screws and total project cost too? The full version on the main site runs the complete takeoff.</p>
