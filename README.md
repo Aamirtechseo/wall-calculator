@@ -36,4 +36,4 @@ A 16 ft long, 8 ft high wall at 16 in on-center, 2x4 lumber, 1 door, 1 window an
 
 ## The full calculators
 
-This demo covers studs only. The full version adds drywall sheets, screws, joint compound, tape and a printable takeoff list, alongside calculators for cinder block, retaining walls, concrete slabs, decks and fences: [wallcalculator.app](https://wallcalculator.app/)
+This demo covers studs only. The full version adds drywall sheets, screws, joint compound, tape and a printable takeoff list, alongside calculators for cinder block, retaining walls, concrete slabs, decks and fences.
