@@ -77,16 +77,33 @@ body {
 .wc-num { display: block; font-size: 1.5rem; font-weight: 800; color: #F8FAFC; }
 .wc-label { display: block; font-size: 0.72rem; color: #94A3B8; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
 .wc-note { margin-top: 14px; font-size: 0.85rem; color: #94A3B8; line-height: 1.5; }
-.wc-section { margin-top: 28px; }
-.wc-section h2 { font-size: 1.3rem; font-weight: 800; color: #F8FAFC; margin-bottom: 10px; }
+.wc-section { margin-top: 32px; }
+.wc-section h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #F8FAFC;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wc-section h2::before {
+  content: "";
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background: #F97316;
+  flex: none;
+}
 .wc-lead { color: #94A3B8; line-height: 1.6; margin-bottom: 14px; }
 .wc-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .wc-mini {
-  background: #111827;
+  background: linear-gradient(180deg, #131C2E 0%, #111827 100%);
   border: 1px solid #1F2937;
   border-left: 3px solid #38BDF8;
   border-radius: 10px;
-  padding: 14px 16px;
+  padding: 16px 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 .wc-mini h3 { font-size: 0.95rem; font-weight: 700; color: #F1F5F9; margin-bottom: 6px; }
 .wc-mini p { font-size: 0.88rem; color: #94A3B8; line-height: 1.55; }
@@ -97,10 +114,20 @@ body {
   text-align: left;
   font-size: 0.92rem;
 }
-.wc-table th { background: #111827; color: #F1F5F9; font-weight: 700; }
+.wc-table th { background: #111827; color: #F1F5F9; font-weight: 700; border-bottom: 2px solid #F97316; }
 .wc-table td { color: #CBD5E1; }
 .wc-table tbody tr:nth-child(even) td { background: #0D1420; }
-.wc-faq h3 { font-size: 1rem; font-weight: 700; color: #F1F5F9; margin: 16px 0 6px; }
+.wc-table tbody tr:hover td { background: #131C2E; }
+.wc-faq h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F1F5F9;
+  margin: 18px 0 6px;
+  border-top: 1px solid #1F2937;
+  padding-top: 18px;
+}
+.wc-faq h3:first-child { border-top: none; padding-top: 0; margin-top: 4px; }
+.wc-faq h3::before { content: "Q. "; color: #38BDF8; }
 .wc-faq p { color: #94A3B8; line-height: 1.6; }
 .wc-foot { margin-top: 20px; text-align: center; color: #94A3B8; line-height: 1.6; }
 .wc-brand { font-size: 0.8rem; color: #64748B; margin-top: 6px; }
