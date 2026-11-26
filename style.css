@@ -24,6 +24,8 @@ body {
   padding-bottom: 12px;
 }
 .wc-logo { font-size: 1.05rem; font-weight: 800; color: #F8FAFC; display: inline-flex; align-items: center; gap: 9px; }
+.wc-logo-img { height: 36px; width: auto; display: block; }
+.wc-footer .wc-logo-img { height: 32px; }
 .wc-logo-mark {
   display: inline-flex;
   align-items: center;
@@ -166,7 +168,7 @@ body {
 .wc-mini p { font-size: 0.88rem; color: #94A3B8; line-height: 1.55; }
 
 /* Table */
-.wc-table { width: 100%; max-width: 640px; border-collapse: collapse; margin-bottom: 16px; }
+.wc-table { width: 100%; max-width: 640px; border-collapse: collapse; margin: 0 auto 16px; }
 .wc-table th, .wc-table td {
   border: 1px solid #1F2937;
   padding: 10px 14px;
